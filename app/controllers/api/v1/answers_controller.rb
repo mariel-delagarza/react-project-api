@@ -1,4 +1,4 @@
-class AnswersController < ApplicationController
+class Api::V1::AnswersController < ApplicationController
   before_action :set_answer, only: [:show, :update, :destroy]
 
   # GET /answers
