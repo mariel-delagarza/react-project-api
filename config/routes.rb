@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :answers
   # I want my api to be questions-answered.com/api/v1/resource
   # We want it to be clear that this is an api, and to not
   # expect HTML to be rendered here, and having a version
