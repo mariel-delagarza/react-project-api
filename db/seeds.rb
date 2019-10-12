@@ -9,12 +9,12 @@
 nadia = User.create(name: "Nadia", username: "nadiaf", password: "password")
 sarah = User.create(name: "Sarah", username: "Sarah1", password: "password")
 
-question1 = Question.create(question: "how to create rails app", 
+answer1 = Answer.create(question: "how to create rails app", 
                             source_link: "stackoverflow.com",
                             answer: "rails new appname",
                             user_id: "1")
 
-question2 = Question.create(question: "how to create react app",
+answer2 = Answer.create(question: "how to create react app",
                             source_link: "stackoverflow.com",
                             answer: "npx create-react-app",
                             user_id: "2")
