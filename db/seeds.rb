@@ -8,15 +8,3 @@
 
 User.create(name: "Nadia", username: "nadiaf", password: "password")
 
-answers = [
-  ["How to generate rails migration", "rails", "stackoverflow.com", "rails g migration table column:type", 1],
-  ["How to create react route", "react", "stackoverflow.com", "react stuff", 1]
-]
-
-answers.each do |row|
-  Answer.create(question:row[0], 
-    topic: row[1],
-    source_link: row[2],
-    answer: row[3],
-    user_id: row[4]) 
-end 
