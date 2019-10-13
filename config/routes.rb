@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get "/api/v1/login", to: "sessions#create"
+  post "/api/v1/login", to: "api/v1/sessions#create"
+
 
   # I want my api to be questions-answered.com/api/v1/resource
   # We want it to be clear that this is an api, and to not
