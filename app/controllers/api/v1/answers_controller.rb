@@ -3,9 +3,14 @@ class Api::V1::AnswersController < ApplicationController
 
   # GET /answers
   def index
-    @answers = current_user.answers.all
-
-    render json: @answers
+    if logged_in?
+      @answers = current_user.answers.all
+      render json: @answers
+    else
+      render json: {
+        error: "You must be logged in to see trips"
+      }
+    end
   end
 
   # GET /answers/1
