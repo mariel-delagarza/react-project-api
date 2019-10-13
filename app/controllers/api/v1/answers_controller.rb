@@ -5,7 +5,7 @@ class Api::V1::AnswersController < ApplicationController
   def index
     if logged_in?
       @answers = current_user.answers.all
-      render json: @answers
+      render json: AnswerSerializer.new(@answers)
     else
       render json: {
         error: "You must be logged in to see answers"
