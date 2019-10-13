@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  
+  get "/api/v1/login", to: "sessions#create"
+
   # I want my api to be questions-answered.com/api/v1/resource
   # We want it to be clear that this is an api, and to not
   # expect HTML to be rendered here, and having a version
