@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   post "/api/v1/login", to: "api/v1/sessions#create"
   get "/api/v1/get_current_user", to: "api/v1/sessions#get_current_user"
+  delete "api/vi/logout", to: "api/vi/sessions#destory"
 
   # I want my api to be questions-answered.com/api/v1/resource
   # We want it to be clear that this is an api, and to not
