@@ -8,7 +8,7 @@ class Api::V1::AnswersController < ApplicationController
       render json: @answers
     else
       render json: {
-        error: "You must be logged in to see trips"
+        error: "You must be logged in to see answers"
       }
     end
   end
