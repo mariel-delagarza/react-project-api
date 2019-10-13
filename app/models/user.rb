@@ -3,4 +3,5 @@ class User < ApplicationRecord
   has_many :answers
 
   validates :name, :username, presence: true
+  validates :username, uniqueness: true
 end
