@@ -3,7 +3,7 @@ class Api::V1::AnswersController < ApplicationController
 
   # GET /answers
   def index
-    @answers = Answer.all
+    @answers = current_user.answers.all
 
     render json: @answers
   end
