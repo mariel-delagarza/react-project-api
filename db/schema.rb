@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_12_213211) do
+ActiveRecord::Schema.define(version: 2019_10_14_040230) do
 
   create_table "answers", force: :cascade do |t|
     t.string "question"
     t.string "topic"
     t.string "source_link"
-    t.text "answer"
+    t.string "answer"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
