@@ -11,10 +11,10 @@ sarah = User.create(name: "Sarah", username: "Sarah1", password: "password")
 
 answer1 = Answer.create(question: "how to create rails app", 
                             source_link: "stackoverflow.com",
-                            answer: "rails new appname",
+                            answer_param: "rails new appname",
                             user_id: "1")
 
 answer2 = Answer.create(question: "how to create react app",
                             source_link: "stackoverflow.com",
-                            answer: "npx create-react-app",
+                            answer_param: "npx create-react-app",
                             user_id: "2")
