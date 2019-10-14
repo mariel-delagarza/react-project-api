@@ -23,7 +23,7 @@ class Api::V1::AnswersController < ApplicationController
     @answer = Answer.new(answer_params)
 
     if @answer.save
-      render json: @answer, status: :created
+      render json: AnswerSerializer.new(@answer), status: :created
     else
       resp = {
         error: @answer.errors.full_messages.to_sentence
