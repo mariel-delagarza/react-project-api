@@ -54,6 +54,6 @@ class Api::V1::AnswersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def answer_params
-      params.require(:answer).permit(:question, :topic, :source_link, :answer, :user_id)
+      params.require(:answer).permit(:question, :topic, :source_link, :answer_param, :user_id)
     end
 end

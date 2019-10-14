@@ -1,6 +1,6 @@
 class AnswerSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :question, :topic, :source_link, :answer
+  attributes :question, :topic, :source_link, :answer_param
 end
 
 #these are the available attributes
